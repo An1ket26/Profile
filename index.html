@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket - Backend Developer & Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Aniket</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <img src="profile.jpg" alt="Aniket" class="profile-image" />
+                    </div>
+                    <h1>Aniket</h1>
+                    <p class="tagline">Backend Developer & Cloud Engineer</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                    <div class="social-links">
+                        <a href="tel:+918249370671" title="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:01aniket26@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/aniket2610" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/An1ket26" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">
+                Backend-focused Full Stack Engineer with 2+ years of experience building scalable cloud-native systems on Azure & AWS. 
+                Led architecture and development of a healthcare data platform with 32+ secure APIs, RBAC, and audit logging. 
+                Specialized in FastAPI microservices, distributed systems, and CI/CD automation with a focus on performance and scalability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Associate 2</h3>
+                            <span class="company">PwC AC</span>
+                            <span class="date">Feb 2024 – Present</span>
+                            <span class="location">Bengaluru, Karnataka</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Led backend architecture and delivery of a cloud-native Healthcare Data Exchange Platform, enabling secure data interoperability across 7 modules for a US healthcare client</li>
+                            <li>Built and deployed 32+ production-grade REST APIs using FastAPI with a modular microservices architecture and enterprise-grade RBAC</li>
+                            <li>Designed and implemented Azure AD-based authentication system with JWT validation, role resolution, and automated user provisioning</li>
+                            <li>Developed a dynamic query engine supporting nested filters (5-level depth), enabling efficient querying and export of large datasets</li>
+                            <li>Integrated Azure Databricks and implemented DBU cost optimization strategies; secured secrets via Azure Key Vault across multiple environments</li>
+                            <li>Automated CI/CD pipelines (Docker, ACR, Azure Web Apps), reducing release cycles by 40% and ensuring zero-downtime deployments</li>
+                            <li>Migrated data pipelines from Azure SQL to AWS Redshift and optimized Power BI reports, improving performance by 15%</li>
+                        </ul>
+                        <div class="achievements">
+                            <strong>Key Achievements:</strong>
+                            <ul>
+                                <li>Reduced deployment time by 40% through CI/CD automation</li>
+                                <li>Improved analytics performance impacting client decision-making</li>
+                                <li>Designed scalable RBAC system for multi-tier enterprise users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="company">Mindfire Digital LLP</span>
+                            <span class="date">Jul 2023 – Dec 2023</span>
+                            <span class="location">Bhubaneswar, Odisha</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Developed REST APIs and optimized database queries, improving application performance and reliability across client systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ConvoHub</h3>
+                        <a href="#" class="source-link">View Source</a>
+                    </div>
+                    <p class="tech-stack">React, Node.js, Express, Socket.io, WebRTC, MongoDB</p>
+                    <p class="project-description">
+                        Built a real-time chat & video platform (Discord clone) with messaging, video calls, and screen sharing via Socket.io and WebRTC; 
+                        secured with JWT auth and state managed via Redux.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PlaceBook</h3>
+                        <a href="#" class="source-link">View Source</a>
+                    </div>
+                    <p class="tech-stack">MERN Stack, Google Maps API</p>
+                    <p class="project-description">
+                        Developed a location-sharing MERN app with JWT authentication and Google Maps API for uploading and exploring 
+                        visited places on an interactive map.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Material UI</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Backend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Socket.io</span>
+                        <span class="skill-tag">WebRTC</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Databases</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Azure Cosmos DB</span>
+                        <span class="skill-tag">AWS Redshift</span>
+                        <span class="skill-tag">Azure SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Security & Other</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">RBAC</span>
+                        <span class="skill-tag">Azure AD</span>
+                        <span class="skill-tag">Pydantic</span>
+                        <span class="skill-tag">Audit Logging</span>
+                        <span class="skill-tag">Azure AI Search</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications & Achievements</h2>
+            <div class="certs-grid">
+                <div class="cert-column">
+                    <h3>Microsoft Certifications</h3>
+                    <ul>
+                        <li><a href="certificates/azure-develop-associate.pdf" target="_blank"><i class="fas fa-certificate"></i> Azure Developer Associate (AZ-204)</a></li>
+                        <li><a href="certificates/azure-administator-associate.pdf" target="_blank"><i class="fas fa-certificate"></i> Azure Administrator Associate (AZ-104)</a></li>
+                        <li><a href="certificates/azure fundamentals.pdf" target="_blank"><i class="fas fa-certificate"></i> Azure Fundamentals (AZ-900)</a></li>
+                        <li><a href="certificates/ai engineer associate.pdf" target="_blank"><i class="fas fa-certificate"></i> AI Engineer Associate</a></li>
+                    </ul>
+                </div>
+
+                <div class="cert-column">
+                    <h3>AWS Certifications</h3>
+                    <ul>
+                        <li><i class="fas fa-certificate"></i> Cloud Practitioner (CLF-C02)</li>
+                    </ul>
+                </div>
+
+                <div class="cert-column">
+                    <h3>Notable Achievements</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i> PwC CEDA – Star Performer of Q3 2025</li>
+                        <li><i class="fas fa-star"></i> PwC CEDA – Star Performer of Q4 2024</li>
+                        <li><i class="fas fa-award"></i> Ranked 1st out of 200+ – Hour of Code 2022</li>
+                        <li><i class="fas fa-award"></i> Global Rank 131 in CodeChef Starters 46</li>
+                        <li><i class="fas fa-award"></i> Smart India Hackathon 2022 Qualifier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-card">
+                <div class="edu-header">
+                    <h3>Bachelor of Technology, Computer Science & Engineering</h3>
+                    <span class="edu-school">Silicon Institute of Technology</span>
+                </div>
+                <p class="edu-dates">Dec 2020 – May 2024</p>
+                <p class="edu-cgpa">CGPA: <strong>9.50 / 10</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="label">Phone</p>
+                                <a href="tel:+918249370671">+91 8249 370671</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="label">Email</p>
+                                <a href="mailto:01aniket26@gmail.com">01aniket26@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="label">Location</p>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aniket. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/An1ket26" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/aniket2610" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:01aniket26@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Node modules (if you add npm dependencies)
+node_modules/
+package-lock.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build
+build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
