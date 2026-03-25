@@ -26,6 +26,9 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button id="dark-mode-toggle" class="dark-mode-btn" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -39,8 +42,15 @@
                         <img src="Images/DEB_9110.JPG" alt="Aniket" class="profile-image" />
                     </div>
                     <h1>Aniket</h1>
-                    <p class="tagline">Backend Developer & Cloud Engineer</p>
+                    <p class="tagline">Backend Engineer | Cloud (Azure & AWS) | Microservices</p>
+                    <p class="hero-impact">
+                        Built production grade APIs • Designed RBAC systems • Scaled cloud-native platforms
+                    </p>
                     <p class="location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                    <div class="cta-buttons">
+                        <a href="Aniket_resume_Single.pdf" class="btn-primary" target="_blank">📄 View Resume</a>
+                        <a href="#contact" class="btn-secondary">💼 Contact Me</a>
+                    </div>
                     <div class="social-links">
                         <a href="tel:+918249370671" title="Phone"><i class="fas fa-phone"></i></a>
                         <a href="mailto:01aniket26@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
@@ -117,6 +127,76 @@
         </div>
     </section>
 
+    <!-- Featured System Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured System</h2>
+            <div class="featured-card">
+                <div class="badge">🚀 Production</div>
+                <h3>Healthcare Data Exchange Platform</h3>
+                <p class="featured-tech">FastAPI • Azure • RBAC • Databricks • Microservices</p>
+                <ul class="featured-highlights">
+                    <li>Designed backend architecture for production healthcare platform serving US clients</li>
+                    <li>Built 32+ APIs enabling secure interoperability across 7 modules</li>
+                    <li>Implemented enterprise-grade RBAC, Azure AD authentication, and audit logging</li>
+                    <li>Optimized large dataset handling with streaming and dynamic query engine</li>
+                    <li>Automated CI/CD pipelines, reducing deployment time by 40%</li>
+                </ul>
+                <div class="impact-metrics">
+                    <div class="metric">
+                        <span class="metric-value">32+</span>
+                        <span class="metric-label">APIs</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">7</span>
+                        <span class="metric-label">Modules</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">40%</span>
+                        <span class="metric-label">Time Saved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tech Stack Spotlight Section -->
+    <section class="tech-spotlight">
+        <div class="container">
+            <h2>Tech Stack Spotlight</h2>
+            <div class="spotlight-grid">
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fab fa-python"></i></div>
+                    <h4>FastAPI</h4>
+                    <p>Production APIs</p>
+                </div>
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Azure</h4>
+                    <p>Cloud Infrastructure</p>
+                </div>
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS</h4>
+                    <p>Data & Analytics</p>
+                </div>
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fas fa-lock"></i></div>
+                    <h4>RBAC</h4>
+                    <p>Security Systems</p>
+                </div>
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fab fa-docker"></i></div>
+                    <h4>Docker</h4>
+                    <p>Containerization</p>
+                </div>
+                <div class="spotlight-item">
+                    <div class="tech-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>Microservices</h4>
+                    <p>Architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -127,10 +207,9 @@
                         <h3>ConvoHub</h3>
                         <a href="https://github.com/An1ket26/Convohub" class="source-link">View Source</a>
                     </div>
-                    <p class="tech-stack">React, Node.js, Express, Socket.io, WebRTC, MongoDB</p>
+                    <p class="tech-stack">React • Node.js • Express • Socket.io • WebRTC • MongoDB</p>
                     <p class="project-description">
-                        Built a real-time chat & video platform (Discord clone) with messaging, video calls, and screen sharing via Socket.io and WebRTC; 
-                        secured with JWT auth and state managed via Redux.
+                        Built a real-time chat and video platform enabling low-latency communication using WebRTC and Socket.io. Implemented JWT authentication and scalable state management using Redux.
                     </p>
                 </div>
 
@@ -139,10 +218,9 @@
                         <h3>PlaceBook</h3>
                         <a href="https://github.com/An1ket26/placebook" class="source-link">View Source</a>
                     </div>
-                    <p class="tech-stack">MERN Stack, Google Maps API</p>
+                    <p class="tech-stack">MERN Stack • Google Maps API</p>
                     <p class="project-description">
-                        Developed a location-sharing MERN app with JWT authentication and Google Maps API for uploading and exploring 
-                        visited places on an interactive map.
+                        Developed a location-based platform with interactive maps and secure authentication. Integrated Google Maps API and optimized backend for efficient data handling.
                     </p>
                 </div>
             </div>
@@ -153,7 +231,62 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2>Technical Skills</h2>
-            <div class="skills-grid">
+            <div class="skills-mastery">
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>FastAPI</h4>
+                        <span class="mastery-level">Expert</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>Azure Cloud</h4>
+                        <span class="mastery-level">Expert</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>Database Design</h4>
+                        <span class="mastery-level">Advanced</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>Docker & CI/CD</h4>
+                        <span class="mastery-level">Advanced</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>React.js</h4>
+                        <span class="mastery-level">Advanced</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 82%"></div>
+                    </div>
+                </div>
+                <div class="mastery-item">
+                    <div class="mastery-header">
+                        <h4>System Design</h4>
+                        <span class="mastery-level">Advanced</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>            <div class="skills-grid">
                 <div class="skill-category">
                     <h4>Languages</h4>
                     <div class="skill-tags">
@@ -233,7 +366,23 @@
     <section class="certifications">
         <div class="container">
             <h2>Certifications & Achievements</h2>
-            <div class="certs-grid">
+            <div class="awards-showcase">
+                <div class="award-item highlight">
+                    <div class="award-icon">⭐</div>
+                    <h3>Star Performer Q3 2025</h3>
+                    <p>PwC CEDA</p>
+                </div>
+                <div class="award-item highlight">
+                    <div class="award-icon">⭐</div>
+                    <h3>Star Performer Q4 2024</h3>
+                    <p>PwC CEDA</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">🏆</div>
+                    <h3>Top Performer</h3>
+                    <p>Multiple Recognition</p>
+                </div>
+            </div>            <div class="certs-grid">
                 <div class="cert-column">
                     <h3>Microsoft Certifications</h3>
                     <ul>
@@ -276,6 +425,18 @@
                 </div>
                 <p class="edu-dates">Dec 2020 – May 2024</p>
                 <p class="edu-cgpa">CGPA: <strong>9.50 / 10</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Open to Opportunities</h2>
+                <p class="hire-text">🚀 Backend Engineer • SDE • Cloud Architecture Roles</p>
+                <p>Let's build something amazing together. I'm available for full-time roles, consulting, or exciting projects.</p>
+                <a href="#contact" class="btn-primary">Start a Conversation</a>
             </div>
         </div>
     </section>

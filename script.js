@@ -1,3 +1,29 @@
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const htmlElement = document.documentElement;
+
+// Check for saved preference or system preference
+const savedDarkMode = localStorage.getItem('darkMode');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedDarkMode === 'true' || (savedDarkMode === null && prefersDark)) {
+    document.body.classList.add('dark-mode');
+    if (darkModeToggle) {
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+}
+
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+        
+        // Update icon
+        darkModeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+}
+
 // Hamburger Menu Toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
